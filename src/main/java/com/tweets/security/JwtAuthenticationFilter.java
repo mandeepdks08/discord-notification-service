@@ -1,4 +1,4 @@
-package com.convo.security;
+package com.tweets.security;
 
 import java.io.IOException;
 
@@ -14,9 +14,9 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.convo.communicator.UserServiceCommunicator;
-import com.convo.datamodel.User;
-import com.convo.util.SystemContextHolder;
+import com.tweets.communicator.UserServiceCommunicator;
+import com.tweets.datamodel.User;
+import com.tweets.util.SystemContextHolder;
 
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {

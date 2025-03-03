@@ -1,4 +1,4 @@
-package com.convo.controller;
+package com.tweets.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.convo.handler.NotificationHandler;
-import com.convo.restmodel.BaseResponse;
-import com.convo.restmodel.SendMessageNotificationRequest;
+import com.tweets.handler.NotificationHandler;
+import com.tweets.restmodel.BaseResponse;
+import com.tweets.restmodel.NotificationSendRequest;
 
 @RestController
 @RequestMapping("/notification/v1")
@@ -21,11 +21,11 @@ public class NotificationController {
 
 	@RequestMapping(value = "/message/new", method = RequestMethod.POST)
 	protected ResponseEntity<BaseResponse> sendNewMessageNotification(
-			@RequestBody SendMessageNotificationRequest request) {
+			@RequestBody NotificationSendRequest request) {
 		BaseResponse baseResponse = BaseResponse.builder().build();
 		HttpStatus httpStatus = null;
 		try {
-			notificationHandler.sendNewMessageNotification(request);
+//			notificationHandler.sendNewMessageNotification(request.getToUserId(), "");
 			baseResponse.setMessage("Notification sent successfully!");
 			httpStatus = HttpStatus.OK;
 		} catch (Exception e) {

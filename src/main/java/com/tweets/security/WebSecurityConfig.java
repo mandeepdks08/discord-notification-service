@@ -1,4 +1,4 @@
-package com.convo.security;
+package com.tweets.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

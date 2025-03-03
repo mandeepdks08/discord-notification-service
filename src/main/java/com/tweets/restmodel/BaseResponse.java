@@ -1,4 +1,4 @@
-package com.convo.restmodel;
+package com.tweets.restmodel;
 
 import java.util.List;
 

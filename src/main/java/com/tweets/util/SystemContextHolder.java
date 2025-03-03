@@ -1,6 +1,6 @@
-package com.convo.util;
+package com.tweets.util;
 
-import com.convo.datamodel.User;
+import com.tweets.datamodel.User;
 
 public class SystemContextHolder {
 	private static ThreadLocal<User> loggedInUser;

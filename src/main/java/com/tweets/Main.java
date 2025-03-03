@@ -1,4 +1,4 @@
-package com.convo;
+package com.tweets;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

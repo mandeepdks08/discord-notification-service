@@ -1,4 +1,4 @@
-package com.convo.datamodel;
+package com.tweets.datamodel;
 
 import java.time.LocalDateTime;
 

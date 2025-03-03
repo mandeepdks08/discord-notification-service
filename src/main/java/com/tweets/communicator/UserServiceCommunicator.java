@@ -1,4 +1,4 @@
-package com.convo.communicator;
+package com.tweets.communicator;
 
 import java.net.URI;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import org.json.JSONObject;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.client.RestTemplate;
 
-import com.convo.datamodel.User;
+import com.tweets.datamodel.User;
 
 public class UserServiceCommunicator {
 	private static final String HOST = "http://localhost:8080";
